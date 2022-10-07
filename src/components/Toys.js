@@ -8,7 +8,7 @@ function About({ toys }) {
   <div>
     <ul>
         {toys.map(toy => <>
-        <li>
+        <li key = { toy.id }>
             <div className="toys">
                 <h4>{toy.name}</h4>
                 <img src={toy.image} alt="toy"/>

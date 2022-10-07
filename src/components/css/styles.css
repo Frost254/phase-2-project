@@ -1,0 +1,9 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    height: 10%;
+    border-bottom: 1px solid black;
+    color: red;
+}

@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-function Home() {
+function Home({ onAddItem }) {
   const [formData, setFormData] = useState({
     name: "",
     img: "",
@@ -24,8 +24,14 @@ function Home() {
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({formData}),
+    body: JSON.stringify({
+      name: formData.name,
+      image: formData.img,
+      likes: formData.likes
+    }),
   })
+  .then(res => res.json())
+  .then(newToy => onAddItem(newToy))
 
 
   return (

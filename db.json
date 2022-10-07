@@ -11,14 +11,12 @@
       "name": "Buzz Lightyear",
       "image": "http://www.pngmart.com/files/6/Buzz-Lightyear-PNG-Transparent-Picture.png",
       "likes": 14
-    },
+    },  
     {
-      "formData": {
-        "name": "Woody",
-        "img": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
-        "likes": ""
-      },
-      "id": 5
+      "name": "Woody",
+      "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
+      "likes": "10",
+      "id": 306
     }
   ]
 }

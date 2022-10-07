@@ -10,6 +10,8 @@ Click on environments to the right, github pages, and on the new tab click on gi
 
 To create your own unique react app follow the steps below :)
 
+Currently the version of React I'm own doesn't allow function of useHistory so stay tuned for that functionality.
+
 Kindly click on the latest run version to enjoy all the functioning features
 
 |  |  |

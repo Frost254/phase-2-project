@@ -5,7 +5,7 @@ import styles from "./css/styles.css"
 function Toys({ toys }) {
   return <>
   <h1>This is my Toys component!</h1>
-  <div>
+  <div style={styles}>
     <ul>
         {toys.map(toy => <>
         <li key = { toy.id }>

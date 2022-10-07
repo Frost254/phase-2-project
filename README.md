@@ -1,3 +1,17 @@
+# Welcome to the Toyland Funland Factory
+
+Where your toy making dreams finally come true, build out your unique army of toys for your next battle!
+
+This is a small React project that allows its users to view available toys in the army and add new toys by submitting new information to our JSON server which is then persisted on the backend.
+
+Need a way to run the app?
+
+Click on environments to the right, github pages, and on the new tab click on github pages to run it. And there you go, you're all set up!
+
+To create your own unique react app follow the steps below :)
+
+|  |  |
+_  _  _
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

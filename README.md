@@ -10,6 +10,8 @@ Click on environments to the right, github pages, and on the new tab click on gi
 
 To create your own unique react app follow the steps below :)
 
+Kindly click on the latest run version to enjoy all the functioning features
+
 |  |  |
 _  _  _
 # Getting Started with Create React App

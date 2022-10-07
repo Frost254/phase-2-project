@@ -15,9 +15,7 @@ function Home({ onAddItem }) {
   function handleSubmit(event) {
     event.preventDefault();
     console.log(formData);
-  }
-
-  fetch("http://localhost:3004/toys", {
+    fetch("http://localhost:3004/toys", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -30,6 +28,9 @@ function Home({ onAddItem }) {
   })
   .then(res => res.json())
   .then(newToy => onAddItem(newToy))
+
+  }
+
 
 
   return (

@@ -1,11 +1,9 @@
 import React, {useState} from "react";
+import styles from "./css/styles.css"
+
 
 function Home({ onAddItem }) {
-  const [formData, setFormData] = useState({
-    name: "",
-    img: "",
-    likes: "",
-  });
+  const [formData, setFormData] = useState({});
 
   function handleChange(event) {
     setFormData({
@@ -35,9 +33,10 @@ function Home({ onAddItem }) {
 
 
   return (
-    <section>
+    <section className="container" style={styles}>
       <h1>Welcome to The ToyLand FunLand!</h1>
       <p>Let's add some toys....</p>
+      <hr />
       <form onSubmit={handleSubmit}>
         <label>
           Name:
@@ -66,7 +65,8 @@ function Home({ onAddItem }) {
             onChange={handleChange}
           />
         </label>
-        <button type="submit">Add Toy</button>
+        <hr />
+        <button type="submit" className="registerbtn">Add Toy</button>
       </form>
     </section>
   );

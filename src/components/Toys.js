@@ -9,7 +9,7 @@ function About({ toys }) {
     <ul>
         {toys.map(toy => <>
         <li>
-            <div>
+            <div className="toys">
                 <h4>{toy.name}</h4>
                 <img src={toy.image} alt="toy"/>
                 <p>Likes: {toy.likes}</p>

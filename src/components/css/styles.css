@@ -25,3 +25,15 @@
   background-color: #04AA6D;
   color: white;
 }
+
+.toys {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+
+.toys img {
+    max-width: 200px;
+    max-height: 200px;
+}

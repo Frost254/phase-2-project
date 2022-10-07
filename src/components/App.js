@@ -23,7 +23,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Home onAddItem={HandleItem}/>} />
-        <Route path="/about" element={<About />} />
+        <Route path="/about" element={<About/>} />
         <Route path="/toys" element={<Toys toys= {toysList}/>} />
       </Routes>
     </div>

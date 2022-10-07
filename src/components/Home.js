@@ -17,6 +17,7 @@ function Home({ onAddItem }) {
       [event.target.name]: event.target.value,
     });
   }
+  
   function handleSubmit(event) {
     event.preventDefault();
     console.log(formData);

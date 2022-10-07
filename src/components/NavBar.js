@@ -17,9 +17,9 @@ function NavBar() {
     <div className="navbar" style={styles}>
       <h1> Funland Toy Store</h1>
       <div>
-      <NavLink to="/" exact style={linkStyles} activeStyle={{background: "darkblue",}} className="topnav"> Home </NavLink>
-      <NavLink to="/about" exact style={linkStyles} activeStyle={{ background: "darkblue",}} className="topnav"> About </NavLink>
-      <NavLink to="/toys" exact style={linkStyles} activeStyle={{ background: "darkblue",}} className="topnav"> Toys </NavLink>
+      <NavLink to="/" exact style={linkStyles} className="topnav"> Home </NavLink>
+      <NavLink to="/about" exact style={linkStyles} className="topnav"> About </NavLink>
+      <NavLink to="/toys" exact style={linkStyles} className="topnav"> Toys </NavLink>
     </div>
     </div>
     

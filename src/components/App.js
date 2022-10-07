@@ -6,7 +6,14 @@ import NavBar from "./NavBar";
 import Toys from "./Toys"
 
 function App() {
-  const [toysList, settoysList]
+  const [toysList, settoysList] = useState("");
+
+  useEffect(() => {
+    fetch("http://localhost:3004/toys")
+    .then(res => res.json())
+    .then(data => console.log(data))
+  }, [])
+
   return (
     <div>
       <NavBar />

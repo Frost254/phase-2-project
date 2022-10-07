@@ -6,12 +6,12 @@ import NavBar from "./NavBar";
 import Toys from "./Toys"
 
 function App() {
-  const [toysList, settoysList] = useState("");
+  const [toysList, settoysList] = useState([]);
 
   useEffect(() => {
     fetch("http://localhost:3004/toys")
     .then(res => res.json())
-    .then(data => console.log(data))
+    .then(data => settoysList(data))
   }, [])
 
   return (
@@ -20,7 +20,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/toys" element={<Toys />} />
+        <Route path="/toys" element={<Toys toys= {toysList}/>} />
       </Routes>
     </div>
   );

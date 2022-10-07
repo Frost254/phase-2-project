@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./css/styles.css"
 
 
-function About({ toys }) {
+function Toys({ toys }) {
   return <>
   <h1>This is my Toys component!</h1>
   <div>
@@ -21,4 +21,4 @@ function About({ toys }) {
   </>;
 }
 
-export default About;
+export default Toys;

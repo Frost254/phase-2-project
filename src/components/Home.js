@@ -19,84 +19,48 @@ function Home() {
     console.log(formData);
   }
 
-  fetch("http://localhost:4000/questions", {
+  fetch("http://localhost:3004/toys", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({
-      prompt: formData.prompt,
-      answer1: formData.answer1,
-      answer2: formData.answer2,
-      answer3: formData.answer3,
-      answer4: formData.answer4
-    }),
+    body: JSON.stringify({formData}),
   })
 
 
   return (
     <section>
-      <h1>New Question</h1>
+      <h1>Welcome to The ToyLand FunLand!</h1>
+      <p>Let's add some toys....</p>
       <form onSubmit={handleSubmit}>
         <label>
-          Prompt:
+          Name:
           <input
             type="text"
-            name="prompt"
-            value={formData.prompt}
+            name="name"
+            value={formData.name}
             onChange={handleChange}
           />
         </label>
         <label>
-          Answer 1:
+          image:
           <input
             type="text"
-            name="answer1"
-            value={formData.answer1}
+            name="img"
+            value={formData.img}
             onChange={handleChange}
           />
         </label>
         <label>
-          Answer 2:
+          Likes:
           <input
             type="text"
-            name="answer2"
-            value={formData.answer2}
+            name="likes"
+            value={formData.likes}
             onChange={handleChange}
           />
         </label>
-        <label>
-          Answer 3:
-          <input
-            type="text"
-            name="answer3"
-            value={formData.answer3}
-            onChange={handleChange}
-          />
-        </label>
-        <label>
-          Answer 4:
-          <input
-            type="text"
-            name="answer4"
-            value={formData.answer4}
-            onChange={handleChange}
-          />
-        </label>
-        <label>
-          Correct Answer:
-          <select
-            name="correctIndex"
-            value={formData.correctIndex}
-            onChange={handleChange}
-          >
-            <option value="0">{formData.answer1}</option>
-            <option value="1">{formData.answer2}</option>
-            <option value="2">{formData.answer3}</option>
-            <option value="3">{formData.answer4}</option>
-          </select>
-        </label>
-        <button type="submit">Add Question</button>
+        <button type="submit">Add Toy</button>
       </form>
     </section>
   );

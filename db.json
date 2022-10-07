@@ -11,6 +11,22 @@
       "name": "Buzz Lightyear",
       "image": "http://www.pngmart.com/files/6/Buzz-Lightyear-PNG-Transparent-Picture.png",
       "likes": 14
+    },
+    {
+      "formData": {
+        "name": "",
+        "img": "",
+        "likes": ""
+      },
+      "id": 3
+    },
+    {
+      "formData": {
+        "name": "",
+        "img": "",
+        "likes": ""
+      },
+      "id": 4
     }
   ]
 }

@@ -43,7 +43,7 @@ function Home() {
           />
         </label>
         <label>
-          image:
+          Submit image url:
           <input
             type="text"
             name="img"

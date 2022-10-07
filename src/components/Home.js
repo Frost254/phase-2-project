@@ -1,9 +1,15 @@
 import React, {useState} from "react";
+import { useNavigate } from "react-router-dom";
 import styles from "./css/styles.css"
 
 
 function Home({ onAddItem }) {
-  const [formData, setFormData] = useState({});
+  const [formData, setFormData] = useState({
+    name: "",
+    image: "",
+    likes: ""
+  });
+  const history = useNavigate();
 
   function handleChange(event) {
     setFormData({
@@ -27,7 +33,11 @@ function Home({ onAddItem }) {
     }),
   })
   .then(res => res.json())
-  .then(newToy => onAddItem(newToy))
+  .then(newToy => {
+    onAddItem(newToy)
+    alert("Toy submitted! Visit the toys section to view")
+    history.push("/about")
+  })
 
   }
 

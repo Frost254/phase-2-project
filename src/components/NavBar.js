@@ -7,7 +7,7 @@ const linkStyles = {
   width: "50px",
   padding: "12px",
   margin: "0 6px 6px",
-  background: "blue",
+  background: "green",
   textDecoration: "none",
   color: "white",
 };
@@ -17,9 +17,9 @@ function NavBar() {
     <div className="navbar" style={styles}>
       <h1> Funland Toy Store</h1>
       <div>
-      <NavLink to="/" exact style={linkStyles} activeStyle={{background: "darkblue",}}> Home </NavLink>
-      <NavLink to="/about" exact style={linkStyles} activeStyle={{ background: "darkblue",}}> About </NavLink>
-      <NavLink to="/toys" exact style={linkStyles} activeStyle={{ background: "darkblue",}}> Toys </NavLink>
+      <NavLink to="/" exact style={linkStyles} activeStyle={{background: "darkblue",}} className="topnav"> Home </NavLink>
+      <NavLink to="/about" exact style={linkStyles} activeStyle={{ background: "darkblue",}} className="topnav"> About </NavLink>
+      <NavLink to="/toys" exact style={linkStyles} activeStyle={{ background: "darkblue",}} className="topnav"> Toys </NavLink>
     </div>
     </div>
     

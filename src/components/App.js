@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./Home";
 import About from "./About";
@@ -6,6 +6,7 @@ import NavBar from "./NavBar";
 import Toys from "./Toys"
 
 function App() {
+  const [toysList, settoysList]
   return (
     <div>
       <NavBar />
